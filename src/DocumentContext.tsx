@@ -72,7 +72,6 @@ export const DocumentProvider = ({ children }: iProps) => {
   const [selectedDocument, setSelectedDocument] = useState<any>();
   const [fileImageSrc, setFileImageSrc] = useState<string>();
  
-  console.log('SAAD DocumentContext.tsx:75', 'SAAD', import.meta.env.VITE_SAAD1);
   const getSelectedDocument = async (id: string) => await getDocument(id);
 
   const getAllDocuments = async () => {
